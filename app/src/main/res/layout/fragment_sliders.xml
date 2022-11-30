@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/fragment_slide_component_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:clickable="false"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140sp"
+        android:background="@drawable/ic_background_slider_text">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/mainText"
+                style="?android:textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="The most exclusive charters \nand planes in Hyggs"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/fragment_slide_component_text"-->
+            <!--                style="?android:textAppearanceMedium"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/fragment_slide_component_text_title"-->
+            <!--                android:layout_marginStart="30sp"-->
+            <!--                android:layout_marginEnd="30sp"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:text="subtitle"-->
+            <!--                android:textColor="#404040"-->
+            <!--                android:textSize="15sp" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_marginStart="-10sp"
+            android:layout_marginTop="-10sp"
+            android:layout_marginEnd="-10sp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/ic_toolbar_hyggs"
+            android:fitsSystemWindows="true">
+
+
+            <ImageView
+                android:id="@+id/icCallToolbar"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:src="@drawable/single_lateral_menu_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="8sp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:padding="1sp"
+                android:src="@drawable/single_ic_white_logo_hyggs" />
+
+
+            <ImageView
+                android:id="@+id/backButtonCustomBar"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="8sp"
+                android:layout_toStartOf="@+id/nameIdContainer"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_circle_profile_image"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/nameIdContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameUserToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16sp"
+                    android:gravity="center"
+                    android:text="   Timo Werner"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idUserToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16sp"
+                    android:layout_marginBottom="20sp"
+                    android:gravity="center"
+                    android:text="Id:203"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/contentFragments"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="79sp"
+        app:itemIconTint="@color/colorMenuDashboardText"
+        app:itemTextAppearance="@style/Theme.HyggsClientChat.MenuLateral"
+        app:itemTextColor="@color/colorMenuDashboardText"
+        app:menu="@menu/menu_chat_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

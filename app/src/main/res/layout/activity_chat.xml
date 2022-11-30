@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChatActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/single_background_chat" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-10sp"
+        android:layout_marginTop="-10sp"
+        android:layout_marginEnd="-10sp"
+        android:background="@drawable/ic_toolbar_hyggs_chat">
+
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/icBackImageView"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginBottom="8sp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/icProfileChatImageView"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="8sp"
+            android:layout_toEndOf="@+id/icBackImageView"
+            android:foregroundGravity="center"
+            android:src="@drawable/single_profile_hyggs_chat"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/nameIdContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4sp"
+            android:layout_toEndOf="@+id/icProfileChatImageView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameUserToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Hyggs Service"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idUserToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Hyggs Service, Timo Werner, Freddy Smith"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icSearchChat"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="24sp"
+            android:layout_marginBottom="8sp"
+            android:layout_toEndOf="@id/nameIdContainer"
+            android:foregroundGravity="center"
+            android:src="@drawable/single_ic_search_profile"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/hyggs_blanco" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvchat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        tools:listitem="@layout/item_chat" />
+
+    <RelativeLayout
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-10sp"
+        android:layout_marginTop="-10sp"
+        android:layout_marginEnd="-10sp"
+        android:layout_marginBottom="-10sp"
+        android:background="@drawable/single_conteiner_chat"
+        android:fitsSystemWindows="true"
+        android:gravity="center">
+
+        <LinearLayout
+
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edittextchat"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:background="@drawable/trazado_1552"
+                android:ellipsize="none"
+                android:inputType="text"
+                android:paddingStart="7dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/sendmsg"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/circlechat"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/send_msg" />
+
+            <ImageView
+                android:id="@+id/goToCameraImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="10sp"
+                android:src="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/recordAudioImageView"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_microphone" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

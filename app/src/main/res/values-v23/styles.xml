@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="android:actionMenuTextColor">@color/gray</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+
+        <item name="android:homeAsUpIndicator">@color/gray</item>
+
+<!--        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>-->
+
+    </style>
+
+
+
+
+    <style name="TextNavigation">
+        <item name="android:textSize">16sp</item><!-- text size in menu-->
+        <!-- item size in menu-->
+
+
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">16sp</item><!-- text size in menu-->
+        <!-- item size in menu-->
+        <item name="android:listPreferredItemHeightSmall">60dp</item>
+        <item name="listPreferredItemHeightSmall">60dp</item>
+        <item name="dropdownListPreferredItemHeight">60dp</item>
+
+        <item name="height">55dp</item>
+
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+
+        <item name="iconSize">18sp</item>
+
+        <!-- item padding left in menu-->
+        <item name="android:listPreferredItemPaddingLeft">5dp</item>
+        <item name="listPreferredItemPaddingLeft">5dp</item>
+
+        <!-- item padding right in menu-->
+        <item name="android:listPreferredItemPaddingRight">5dp</item>
+        <item name="listPreferredItemPaddingRight">5dp</item>
+    </style>
+
+
+
+    <!-- Theme.AppCompat.Light is not a dialog theme -->
+<!--    <style name="DialogTheme" parent="android:Theme.Material.Light.Dialog">-->
+
+<!--        <item name="colorPrimary">#79c1ea</item>-->
+<!--        <item name="colorPrimaryDark">#ffffff</item>-->
+<!--        <item name="colorAccent">#ef4544</item>-->
+<!--        <item name="android:textColor">#ffffff</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+<!--        <item name="android:headerBackground">@color/colorPrimary</item>-->
+
+
+<!--&lt;!&ndash;        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>&ndash;&gt;-->
+
+
+<!--    </style>-->
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeActivity"
+    android:background="@color/gray">
+
+    <ImageView
+        android:onClick="continueToPayment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/single_welcome_image"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageView
+        android:layout_width="160sp"
+        android:layout_height="180sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="46sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
+        android:src="@drawable/single_ic_white_logo_hyggs" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/presentation_layout_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:background="@drawable/ic_background_welcome_activity"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/mainText"
+                style="?android:textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20sp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Welcome to the most exclusive
+\nconcierge service in the world,
+\nin a few moments we will
+\ncontact you to give you access
+\nto a world of privileges."
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blackText">#313131</color>
+    <color name="blackClear">#1e1e1e</color>
+    <color name="blackBackgroundTraslucent">#7E000000</color>
+    <color name="gray">#848688</color>
+    <color name="grayHyggsDarker">#707070</color>
+    <color name="grayHyggs">#868686</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorMenuDashboardText">#707070</color>
+    <color name="colorMenuDashboardBackground">#f2f2f2</color>
+    <color name="colorHint">#767676</color>
+    <color name="grayClear">#7e7e7e</color>
+    <color name="grayBackgroundTraslucent">#B3D5D5D5</color>
+    <color name="grayBackgroundTraslucentClearer">#68D5D5D5</color>
+    <color name="whiteBackgroundTraslucent">#CBFFFFFF</color>
+    <color name="whiteBackgroundTraslucentRequirementItem">#90FFFFFF</color>
+    <color name="whiteBackgroundTraslucentRequirement">#9CFFFFFF</color>
+    <color name="deleteChat">#ef2c1e</color>
+</resources>

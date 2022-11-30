@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hyggs.clientchat">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HyggsSupplier"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ChatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HyggsSupplier.NoActionBar"/>
+        <activity
+            android:name=".activities.HomeChatActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home_chat"
+            android:theme="@style/Theme.HyggsSupplier.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HyggsSupplier.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activities.CodeVerificationActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HyggsClientChat.NoActionBar"
+            android:windowSoftInputMode="stateVisible"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activities.PasswordCreationAndRecoveryActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HyggsClientChat.NoActionBar"
+            android:windowSoftInputMode="stateVisible"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HyggsClientChat.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.HyggsSupplier.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SlidersActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HyggsSupplier.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

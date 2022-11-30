@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MenuProfileFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lineOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-20sp"
+            android:background="#33bfbfbf"
+            android:orientation="horizontal"
+            android:paddingTop="30sp"
+            android:paddingBottom="20sp">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16sp"
+                android:src="@drawable/single_ic_profile_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/titleTitleRequirement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="16sp"
+                    android:gravity="start"
+
+                    android:text="My Profile"
+                    android:textColor="#313131"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/titleRequirement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="40sp"
+                    android:gravity="start"
+                    android:text="Basic profile information"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_weight="5"
+            android:background="@drawable/vector_background_border_profile"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/titleDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:editable="false"
+                android:elevation="10sp"
+                android:ellipsize="none"
+                android:focusable="false"
+                android:hint="Title*"
+                android:inputType="phone"
+                android:paddingStart="13dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/dropDownTitle"
+                android:layout_width="35sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="-35sp"
+                android:src="@drawable/single_desplegable_new" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/vector_background_border_profile">
+
+            <EditText
+                android:id="@+id/firstNameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10sp"
+                android:background="@android:color/transparent"
+                android:ellipsize="none"
+                android:hint="Name*"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_weight="5"
+            android:background="@drawable/vector_background_border_profile"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/membershipDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:editable="false"
+                android:elevation="10sp"
+                android:ellipsize="none"
+                android:focusable="false"
+                android:hint="Membership*"
+                android:inputType="phone"
+                android:paddingStart="13dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/dropDownMembership"
+                android:layout_width="35sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="-35sp"
+                android:src="@drawable/single_desplegable_new" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/vector_background_border_profile"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10sp"
+                android:background="@android:color/transparent"
+                android:ellipsize="none"
+                android:hint="Account Associated to"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="35sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="-45sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:src="@drawable/single_ic_search_profile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/vector_background_border_profile">
+
+            <EditText
+                android:id="@+id/emailProfile"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10sp"
+                android:background="@android:color/transparent"
+                android:ellipsize="none"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80sp"
+                android:layout_height="50sp"
+                android:background="@drawable/vector_background_border_profile"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/codePhoneRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10sp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:elevation="10sp"
+                    android:ellipsize="none"
+                    android:focusable="false"
+                    android:hint="+44"
+                    android:inputType="number"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5sp"
+                    android:scrollHorizontally="true"
+
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:layout_width="35sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-35sp"
+                    android:src="@drawable/single_desplegable"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginStart="16sp"
+                android:background="@drawable/vector_background_border_profile"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/phoneRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10sp"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="none"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:paddingStart="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_weight="5"
+            android:background="@drawable/vector_background_border_profile"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/typeDocumentDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:editable="false"
+                android:elevation="10sp"
+                android:ellipsize="none"
+                android:focusable="false"
+                android:hint="Type of Document"
+                android:inputType="phone"
+                android:paddingStart="13dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/dropDownTypeDocument"
+                android:layout_width="35sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="-35sp"
+                android:src="@drawable/single_desplegable_new" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/vector_background_border_profile">
+
+            <EditText
+                android:id="@+id/identification"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10sp"
+                android:background="@android:color/transparent"
+                android:ellipsize="none"
+                android:hint="Identification"
+                android:inputType="number"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="50sp"
+                android:layout_weight="2"
+                android:background="@drawable/vector_background_border_profile"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dayBirthRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:elevation="10sp"
+                    android:ellipsize="none"
+                    android:focusable="false"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="5sp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:layout_width="35sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-35sp"
+                    android:src="@drawable/single_desplegable" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="10sp"
+                android:layout_weight="5"
+                android:background="@drawable/vector_background_border_profile"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/monthBirthRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:elevation="10sp"
+                    android:ellipsize="none"
+                    android:focusable="false"
+                    android:hint="Noviembre"
+                    android:inputType="phone"
+                    android:paddingStart="13dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/dropdownMonth"
+                    android:layout_width="35sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-35sp"
+                    android:src="@drawable/single_desplegable" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="10sp"
+                android:layout_weight="3"
+                android:background="@drawable/vector_background_border_profile"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/yearBirthRegister"
+                    android:layout_width="94dp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:elevation="10sp"
+                    android:ellipsize="none"
+                    android:focusable="false"
+                    android:hint="1999"
+                    android:inputType="number"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="5sp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/watchPassIco"
+                    android:layout_width="35sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-35sp"
+                    android:src="@drawable/single_desplegable" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_weight="5"
+            android:background="@drawable/vector_background_border_profile"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/defaultTimeZone"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:editable="false"
+                android:elevation="10sp"
+                android:ellipsize="none"
+                android:focusable="false"
+                android:hint="Default time zone*"
+                android:inputType="phone"
+                android:paddingStart="13dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/dropDownDefaultTimeZone"
+                android:layout_width="35sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="-35sp"
+                android:src="@drawable/single_desplegable_new" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/verifyMyAccountButtonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/vector_selector_all_buttons"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

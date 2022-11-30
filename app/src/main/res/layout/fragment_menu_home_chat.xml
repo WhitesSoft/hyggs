@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentChats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MenuHomeChatFragment">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/toolbarSearchChat"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginStart="-10sp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-10sp"
+        android:layout_marginBottom="-8dp"
+        android:background="@drawable/rectangule_chat"
+        >
+
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/llsearch"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="8sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/grupo_1796"
+            >
+
+            <ImageView
+                android:src="@drawable/icon_awesome_search"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_height="20dp"/>
+            <EditText
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:id="@+id/edittextsearch"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:hint="Search"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:lines="1"
+                android:paddingLeft="30dp"
+                android:textColorHint="@color/whiteBackgroundTraslucent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/cleartv"
+                android:visibility="gone"
+                android:clickable="true"
+                android:layout_margin="7dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@drawable/ic_clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:focusable="true" />
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtcancel"
+            android:layout_gravity="center"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginStart="-15dp"
+            android:layout_marginBottom="8sp"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dontHaveChats"
+        android:layout_width="300sp"
+        android:layout_height="150sp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:src="@drawable/ic_dont_have_chats" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/toolbarSearchChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/newChatButton"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_chat" />
+
+</RelativeLayout>

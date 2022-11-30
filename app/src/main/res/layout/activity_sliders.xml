@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SlidersActivity"
+    android:background="@color/gray">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never" />
+
+    <ImageView
+        android:layout_width="120sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
+        android:src="@drawable/single_ic_white_logo_hyggs" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_height="40sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/sliderCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_slider_one_selected" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/presentation_layout_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:background="@drawable/ic_background_buttons_sliders"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="15dp"
+
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/vector_selector_all_buttons"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/vector_selector_all_buttons"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
